@@ -1,0 +1,301 @@
+
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding:  0px 0px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/* CSS Variables*/
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('g-d-goenka-international-school-surat-644710627.png') no-repeat center center/cover;
+    height: 688px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* services section */
+
+#services {
+    margin: 34px;
+    display: flex;
+    padding: 30px;
+ 
+
+}
+
+#services .box {
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    border-radius: 28px;
+    
+    
+}
+
+#services .box img {
+    height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+   
+}
+/* Our Publications*/
+#Title {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+#publication-sections .ab{
+    padding-left: 10%;
+    padding-right: 10%;
+  
+}
+/* clients section */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(contactus.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients img {
+    height: 150px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+/* contact section */
+.h-primary
+{
+    text-align: center;
+}
+#contact {
+    position: relative;
+    padding: 30px 0px;
+    margin: 0px 0px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(contact-us-bg.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+} 
+
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    padding: 0.5rem; 
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+}
+
+/* Utility Class */
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 30px;
+    color:black;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    font-family: 'Bree Serif', serif;
+    transition: ease-out 3s;
+    background-color: rgb(143 255 0);
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #ffec07;
+    outline: none;
+    height: 40px;
+    width: 104px;
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: inset 300px 0 0 0 #f9e506;
+}
+
+.center {
+    text-align: center;}
+    
+.submit{
+     border-radius: 20px;
+     font-family: 'Bree Serif', serif;
+     background-color: cornflowerblue; 
+     margin: 40px;
+     padding: 2px; 
+     height: 40px;
+     width: 104px;
+     position:absolute;
+     }
+  
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+    margin: 20px;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
